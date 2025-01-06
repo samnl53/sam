@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="utf-8">
+    <title>خرید محصول</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img id="imglogo" src="logoo.png" alt="لوگو">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+                <li><a href="login.html">ورود</a></li>
+                <li><a href="signup.html">ثبت‌نام</a></li>
+                <li><a href="products.html">محصولات</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>خرید محصول</h1>
+        <div class="purchase-container">
+            <form action="purchase.php" method="post">
+                <div class="form-group">
+                    <label for="product-name">نام محصول</label>
+                    <select id="product-name" name="product-name" required>
+                        <option value="محصول 1">محصول 1</option>
+                        <option value="محصول 2">محصول 2</option>
+                        <option value="محصول 3">محصول 3</option>
+                        <!-- گزینه‌های بیشتر را می‌توانید اضافه کنید -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="customer-name">نام مشتری</label>
+                    <input type="text" id="customer-name" name="customer-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">آدرس</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">شماره تماس</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">ایمیل</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn">ثبت سفارش</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 وبسایت</p>
+    </footer>
+</body>
+</html>
